@@ -8,21 +8,54 @@
     <script defer src="index.js"></script>
 </head>
 <body>
-    <main>
-        <template>
-            <section>
+    <!--Used templating to get each state(intro , play game, end game)-->
+    <!--intro 
+    
+    Explains the rules-->
+    <template>
+        <div style="display: flex; flex-direction:column; font-size: 50px; height:auto;">
+            <h1>Rules</h1>
+            <ul>
+                <li>Answer as many questions as possible before timer hits 60</li>
+                <li>the harder the question the more points you gain</li>
+                <li>answers will be displayed on the console "answer is: n"</li>
+                <li>decimals should be rounded</li>
+            </ul>
+            Click to Start</div>
+        
+    </template>
                 
-            </section>
+    <!--play game
+    
+    Math game-->
+    <template>
+        <section style="position:fixed; bottom: 20px; display:block; flex-direction: row; justify-content: center; z-index:200; left:30%; width:100%; align-items: center;">
+            <form>
+                <input type="text" style="height: 80px; font-size: 40px; display:inline-flex; align-self: center; border:solid 10px black;" id="userInput" required >
+                <button type="submit" style="height: 85px; font-size: 30px; border: solid 10px black;">Submit</button>
+            </form>
+        </section>
+        <div id="timer" style="position:fixed; top:0px; z-index: 30; border-radius: 200px; width:80px; height: 80px;"></div> 
+        <main>
+        </main>
+    </template>
+    <!--end game:
+    
+    Displays the score
+    
+    -->
+    <template>
+        <div style="height:500px">You win</div>
+    </template>
 
-        </template>
-        <div id="questionBody">
-
-
-        </div>
-
-
-    </main>
+    
     <audio id="clockSound" src="audio/tick.wav">
+    </audio>
+    <audio id="correct" src="audio/correct.mp3">
+    </audio>
+    <audio id="error" src="audio/error.mp3">
+    </audio>
+    <audio id="music" src="audio/MathGameMusic.mp3">
     </audio>
 </body>
 </html>

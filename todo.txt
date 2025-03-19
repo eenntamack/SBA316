@@ -1,0 +1,30 @@
+adjusting timing of ticks
+
+implement a hover effect on individual problems
+
+display problems on each board
+
+test scoring div
+
+points stored in localStorage
+
+/implement countdown;
+
+implement an input field that stores user's answer
+
+if timer hits 0 use templating to remove question and reveal score
+
+//optional implement play again
+
+//implement the start screen
+(if screen clicked, section plays fade away animation, once ended display none)
+(eventlistener when screen ends start the question and timer)
+
+if timer is low; start pulsing animation on current question(store a reference to current
+
+if it has current class add pulsing class / if new div added; remove class(.current) from last child before
+adding the new div to a new div then set current class to lastChild)
+
+//add slow darkening effect using interval to slowly darken the parent(example 'rgb(200,200,${200- darkener}'))
+
+
