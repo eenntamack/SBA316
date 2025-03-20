@@ -285,7 +285,7 @@ function mainGame(initial){
 
                     correct = g.answer
                     //debugging to work with correct and  wrong answers
-                    console.log("answer is: " + correct)
+                    console.log("________answer is:______ " + correct)
 
                     //Here if the main element has more than 5 elements , it removes the last child
                     //maintaining 5 elements
@@ -363,7 +363,7 @@ function mainGame(initial){
                         window.scrollTo({ top: d.offsetTop, behavior: 'smooth' });
 
                         correct = g.answer
-                        console.log("answer is: " + correct)
+                        console.log("________answer is:______" + correct)
 
                         if(main.childNodes.length >5){
                             main.removeChild(main.firstChild);
